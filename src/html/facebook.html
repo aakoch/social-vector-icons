@@ -17,19 +17,6 @@
 <!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
 
-  <div id="container">
-    <header>
-    </header>
-    
-    <div id="main">
-    
-    
-    </div>
-    
-    <footer>
-    </footer>
-  </div>
-
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
 <script>!window.jQuery && document.write('<script src="https://github.com/aakoch/social-vector-icons/raw/master/src/js/jquery-1.4.2.min.js"><\/script>')</script>
 <script src="https://github.com/aakoch/social-vector-icons/raw/master/src/js/plugins.js?v=1"></script>
@@ -39,7 +26,10 @@
 
 <script>
 $(function () {
-    var paper = Raphael(0, 0, 35, 35);
+    var $a = $("#a"),
+        top = $a.position().top,
+        left = $a.position().left;
+    var paper = Raphael(top, left, top + 35, left + 35);
     paper.path("m 16.883284,1.8955449 -1.1e-4,4.58712 -3.988049,0 c -0.9762,0.1875 -1.12743,0.72734 -1.09618,1.93733 l 0,3.0478001 5.084229,0 -2e-5,5.88205 -5.084209,0 -2e-5,17.14964 -6.98016,0 0,-17.14964 -4.28700019,0 0.19941,-5.88205 4.08759019,0 c 0,0 0,-3.5542101 0,-5.7772101 0,-2.22299 2.40118,-5.19007997 5.17862,-5.19007997 l 6.885789,0 z")
 })
 </script>
